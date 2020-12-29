@@ -1,0 +1,78 @@
+---
+layout: base
+title: Experiments
+---
+
+<!--
+<h1>{{ "Hello World!" | downcase }}</h1>
+
+
+<h1>Staff</h1>
+
+<ul>
+    {% for author in site.authors %}
+    <li>
+        <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+        <h3>{{ author.position }}</h3>
+        <p>{{ author.content | markdownify }}</p>
+    </li>
+    {% endfor %}
+</ul>
+-->
+
+<section class="faq_area area-padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="area-heading" style="margin-top:50px">
+                    <h4>Experiments</h4>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <div class="accordion" id="accordionExample">
+
+                    {% assign counter = 0 %}
+                    {% for experiment in site.experiments-preview %}
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapse{{ counter }}" aria-expanded="false"
+                                    aria-controls="collapse{{ counter }}">
+                                    {{ experiment.experiment-title }} - {{ experiment.author }},
+                                    {{ experiment.country }}
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse{{ counter }}" class="collapse" aria-labelledby="heading{{ counter }}"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h6 class="typo-list" style="margin-bottom: 20px; color: #4B465A;">
+                                    {{ experiment.experiment-complete-title }}
+                                </h6>
+                                {{ experiment.content | markdownify }}
+
+                                {% assign full-experiment = site.experiments | where: 'experiment-title', experiment.experiment-title | first %}
+                                {% if full-experiment %}
+                                <a href="{{ full-experiment.url }}">Read full experiment.</a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    {% assign counter = counter | plus:1 %}
+                    {% endfor %}
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!--================ End Faq Area =================-->
