@@ -297,7 +297,7 @@ ul {
     top: -70px;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: #0c0738;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -433,6 +433,7 @@ ul {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
+    
     position: relative;
     z-index: 1;
     min-height: 900px;
@@ -442,16 +443,16 @@ ul {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 900px;
+    min-height: 1000px;
 }
 
 .home_banner_area .banner_inner .overlay {
     background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
+    background-size: cover;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    height: 100%;
     bottom: 0;
     z-index: -1;
 }

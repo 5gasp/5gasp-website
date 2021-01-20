@@ -24,14 +24,35 @@
         <header class="header_area">
             <div class="main_menu">
                 {% include navigation.html %}
-
             </div>
         </header>
         <!--================Header Menu Area =================-->
 
 
+        {% if page.title == "Home" %}
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area" style="margin-bottom: 25px;">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                            <div class="banner_content">
+                                <h3>H2020-5GASP</h3>
+                                <p>5G Application & Services experimentation and certification Platform</p>
+                                <button class="btn click-btn" type="submit" style="cursor: auto;">
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        {% else %}
         <!--================Hero Banner Area Start =================-->
-        <section class="hero-banner d-flex align-items-center" style="background-color: #261e74;">
+        <section class="hero-banner d-flex align-items-center" style="background-color: #261e74; margin-bottom: 25px;">
             <div class="container text-center">
                 <h2>{{ page.title }}</h2>
                 <nav aria-label="breadcrumb" class="banner-breadcrumb">
@@ -42,6 +63,9 @@
             </div>
         </section>
         <!--================Hero Banner Area End =================-->
+        {% endif %}
+
+
 
 
 
