@@ -169,4 +169,7 @@ tags
 # Persistent undo
 [._]*.un~
 
+generated-website/
+website/_site/
+website/.jekyll-cache/
 # End of https://www.toptal.com/developers/gitignore/api/vim,python,code
