@@ -4549,7 +4549,7 @@ h6 {
 /*----------------------------------------------------*/
 /*============== footer-area css ===============*/
 .footer-area {
-    padding-top: 115px;
+    padding-top: 50px;
     background: #1f2338;
 }
 
@@ -4687,7 +4687,6 @@ h6 {
 
 .footer-area .footer-bottom {
     border-top: 1px solid #4c4f60;
-    margin-top: 51px;
     padding: 20px 0;
 }
 
@@ -4765,11 +4764,11 @@ h6 {
     }
 
     .footer-area {
-        padding-top: 70px;
+        padding-top: 30px;
     }
 
     .footer-bottom {
-        margin-top: 35px;
+        margin-top: 25px;
     }
 }
 
