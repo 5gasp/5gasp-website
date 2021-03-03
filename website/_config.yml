@@ -1,10 +1,15 @@
 collections:
+  facilities:
+    output: true
+  facilities-preview:
+    output: true
   authors:
     output: true
   experiments-preview:
     output: true
   experiments:
     output: true
+  
 
 defaults:
   - scope:
@@ -22,6 +27,11 @@ defaults:
       type: "experiments"
     values:
       layout: "experiment"
+  - scope:
+      path: ""
+      type: "facilities"
+    values:
+      layout: "facility"
   - scope:
       path: ""
     values:
