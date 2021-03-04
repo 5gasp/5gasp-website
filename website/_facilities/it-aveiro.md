@@ -26,7 +26,7 @@ ITAv is located in the city of Aveiro, in Portugal. It is composed by two differ
 # Available Infrastructure:  
 ITAv infrastructure provides a real-life environment for developing, integrating and testing novel solutions for 5G and beyond technologies. Bringing together academics, operators, vendors and vertical industries to accelerate the development of mobile communications and the creation of novel business models. The infrastructure is open to the whole research and innovation community, both academic and industrial, to foster innovation on 5G technologies and its exploitation. The infrastructure features four different sites: (i) two on-campus indoor deployments; (ii) one off-campus outdoor deployment; and (iii) one off-campus indoor, edge-based deployment.  
 
-![]({{ site.url }}/assets/img/facilities/it_equipment_2_2.png)
+![]({{ site.url }}/assets/img/facilities/it_infra.png)
 
 The core infrastructure deployed on the main on-campus features both research graded and industry graded solutions:  
 
@@ -44,6 +44,9 @@ The core infrastructure deployed on the main on-campus features both research gr
 	-   24 Multi-Tech Nodes  
 	-   Mobile Node(~30km/h)  
 	
+![]({{ site.url }}/assets/img/facilities/it_reasearch_graded_1.png)
+![]({{ site.url }}/assets/img/facilities/it_reasearch_graded_2.png)
+
 ## Industry graded  
 -   Commercial Graded 5G Standalone Core  
 -   5G Indoor Radio:  
@@ -57,7 +60,7 @@ Remaining sites are empowered with commercial graded solution:
 - Outdoor scenarios:  
 -   5G Outdoor Radio (3 x 64T64R antennas)  
 
-![]({{ site.url }}/assets/img/facilities/it_equipment_1.png)
+![]({{ site.url }}/assets/img/facilities/it_industry_graded.png)
 
 # **5G Communication Network**  
 
