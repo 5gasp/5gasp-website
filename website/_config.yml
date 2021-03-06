@@ -9,6 +9,10 @@ collections:
     output: true
   experiments:
     output: true
+  project:
+    output: true
+  project-objectives:
+    output: true
   
 
 defaults:
@@ -27,6 +31,11 @@ defaults:
       type: "experiments"
     values:
       layout: "experiment"
+  - scope:
+      path: ""
+      type: "project"
+    values:
+      layout: "base"
   - scope:
       path: ""
       type: "facilities"

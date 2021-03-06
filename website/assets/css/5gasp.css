@@ -134,3 +134,77 @@
 .home table td:nth-child(3) {
     text-align: left;
 }
+
+
+
+.project-navbar h1 {
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #201978;
+}
+
+.project-navbar h1:hover {
+    color: #136dbb;
+}
+
+.project-navbar .selected {
+    color: #136dbb;
+}
+
+
+.project-navbar aside{
+    text-transform: uppercase;
+}
+
+.project-info h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #201978;
+}
+
+.project-info p {
+    color: #484848;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project-info li {
+    color: #484848;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project-info h5 button {
+    font-size: 16px !important;
+    color: #201978 !important;
+}
+
+.project-info .card-body-title {
+    margin-bottom: 20px; 
+    font-weight: 600;
+    font-size: 16px !important;
+    color: #4B465A;
+}
+
+.project-info .card-body-bold {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px !important;
+    color: #4B465A;
+}
+
+.project-info ul {
+    display: block;
+    list-style-type: circle;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 35px;
+}
+
+.project-info ul li{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,58 @@
+---
+layout: base
+title: 5GASP Project
+---
+
+<section class="faq_area area-padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
+                    <h1>5GASP Project</h1>
+                </div>
+
+            </div>
+
+            <div class="project-info col-lg-9  mb-lg-0">
+                {% for page in site.project %}
+                {% if page.title == "5GASP Project" %}
+                {{ page.content | markdownify }}
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="col-lg-3">
+                <div class="project-navbar blog_right_sidebar">
+                    <aside class="single_sidebar_widget post_category_widget">
+                        <ul class="list cat-list">
+                            <li>
+                                <a href="{{ site.baseurl }}/project/project.html" class=" d-flex">
+                                    <h1 class="selected">5GASP Project</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Objectives</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Work Packages</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Consortium as a whole</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Consortium participants</h1>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
