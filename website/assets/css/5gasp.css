@@ -197,6 +197,13 @@
     color: #4B465A;
 }
 
+.project-info h2 {
+    margin-bottom: 20px; 
+    font-weight: 600;
+    font-size: 18px !important;
+    color: #136dbb;
+}
+
 .project-info ul {
     display: block;
     list-style-type: circle;
@@ -232,4 +239,39 @@
     font-size: 14px !important;
     color: #4B465A !important;
 }
+
+
+.project-info table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-info table td {
+    border: 1px solid #ddd;
+    font-size: 14px !important;
+    padding: 8px;
+    text-align: center;
+    color: #4B465A !important;
+}
+
+
+
+.project-info table th {
+    background-color: #201978;
+    color: white;
+    padding: 12px;
+    font-size: 14px !important;
+    text-align: center;
+    font-weight: 500;
+    
+}
+
+
+
+.project-info table td:nth-child(3) {
+    text-align: center;
+}
+
 
