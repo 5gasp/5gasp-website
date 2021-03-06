@@ -9,7 +9,7 @@ collections:
     output: true
   experiments:
     output: true
-  project:
+  project-main:
     output: true
   project-objectives:
     output: true

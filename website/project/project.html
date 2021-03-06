@@ -14,7 +14,7 @@ title: 5GASP Project
             </div>
 
             <div class="project-info col-lg-9  mb-lg-0">
-                {% for page in site.project %}
+                {% for page in site.project-main %}
                 {% if page.title == "5GASP Project" %}
                 {{ page.content | markdownify }}
                 {% endif %}

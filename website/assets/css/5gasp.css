@@ -165,12 +165,14 @@
 }
 
 .project-info p {
+    font-size: 14px !important;
     color: #484848;
     text-align: justify;
     text-justify: inter-word;
 }
 
 .project-info li {
+    font-size: 14px !important;
     color: #484848;
     text-align: justify;
     text-justify: inter-word;
