@@ -1,8 +1,7 @@
 ---
 title: Objective 5
+description: Provide all the community with state-of-the-art tools for test deployment, test automation, continuous integration and monitoring of testbeds, mainly through Open Source Software tools.
 ---
-
-## 5. Provide all the community with state-of-the-art tools for test deployment, test automation, continuous integration and monitoring of testbeds, mainly through Open Source Software tools.
 
 5GASP plans the development of software tools that can assist the NetApp developers in building Continuous
 Integrations frameworks, targeted at their specific vertical, consisting mostly out of OSS tools and producing reports

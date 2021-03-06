@@ -1,8 +1,7 @@
 ---
 title: Objective 3
+description: Innovate technically by addressing inter-domain use-cases, security and trust aspects associated with NetApp deployment and Operation.
 ---
-
-## 3. Innovate technically by addressing inter-domain use-cases, security and trust aspects associated with NetApp deployment and Operation.
 
 Albeit all work done by researchers in previous and ongoing projects, aspects related to inter-domain use-cases as
 well as security and trust aspects associated with running 3rd party software (NetApps) in critical network

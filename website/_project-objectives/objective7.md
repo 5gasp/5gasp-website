@@ -1,8 +1,8 @@
 ---
 title: Objective 7
+description: Create a business model around a marketplace of NetApps, by which all stakeholders can share revenue.
 ---
 
-## 7. Create a business model around a marketplace of NetApps, by which all stakeholders can share revenue.
 
 A key innovation of our project is the creation of a marketplace portal (NetAppStore) that aggregates NetApps from
 several SME’s or any other NetApp developer in a single location curated by the NetApps Community. The portal

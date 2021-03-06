@@ -1,8 +1,7 @@
 ---
 title: Objective 6
+description: Create a practice community, where developers can share knowledge about 5G NetApps.
 ---
-
-## 6. Create a practice community, where developers can share knowledge about 5G NetApps
 
 The socialization of NetApps developers is of outmost importance in the success of our ecosystem. Only through a
 tight support community, built upon trust and information sharing, can SMEs and start-ups find the proper
