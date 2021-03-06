@@ -15,6 +15,8 @@ collections:
     output: true
   project-workpackages:
     output: true
+  project-participants:
+    output: true
   
 
 defaults:

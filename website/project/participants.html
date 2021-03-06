@@ -9,18 +9,39 @@ subtitle: Consortium
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
-                    <h1>Consortium as a whole</h1>
+                    <h1>Consortium participants</h1>
                 </div>
 
             </div>
 
             <div class="project-info col-lg-9  mb-lg-0">
-                {% for page in site.project-main %}
-                {% if page.title == "Consortium as a whole" %}
-                {{ page.content | markdownify }}
-                {% endif %}
+
+                {% assign counter = 0 %}
+                {% for participant in site.project-participants %}
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapse{{ counter }}" aria-expanded="false"
+                                    aria-controls="collapse{{ counter }}">
+                                    {{ participant.title }}
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse{{ counter }}" class="collapse" aria-labelledby="heading{{ counter }}"
+                            data-parent="#accordionExample">
+                            <div class="card-body project-objectives">
+                                {{ participant.content | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% assign counter = counter | plus:1 %}
                 {% endfor %}
             </div>
+
             <div class="col-lg-3">
                 <div class="project-navbar blog_right_sidebar">
                     <aside class="single_sidebar_widget post_category_widget">
@@ -31,7 +52,7 @@ subtitle: Consortium
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="d-flex">
+                                <a href="{{ site.baseurl }}/project/objectives.html" class=" d-flex">
                                     <h1>Objectives</h1>
                                 </a>
                             </li>
