@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: Experiments
-  link: /experiments.html
+- name: The Project
+  link: /project.html
 - name: Facilities
   link: /facilities.html
