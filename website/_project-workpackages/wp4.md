@@ -8,17 +8,6 @@ OdinS
 
 ### Objectives:
 
-This WP contains the necessary effort to transform the 5GASP envisaged solutions to NetApps ready to be automated
-and onboarded to testbeds via the CI/CD process. The 5GASP SME partners solutions will be modelled, designed,
-transformed, and developed as NetApps in such a way that will allow to be interoperable across facilities following a
-diverse set of underlying NFV/5G solutions. In cases that NetApps follow a specific model the process will help the
-enhancement of WP3 services, like the automated model translation to enhance the NetApp archive model and
-embedded entities for the target facility NFV Orchestrator, depending on the defined model (YANG or TOSCA).
-Especially, in this WP, the “VNFication” phase of the 5GASP envisaged V-Model methodology will be followed
-according to the requirements set by WP2. 
-
-Specifically, WP4 shall:
-
 - Define a methodology that establishes the limits of a NetApp and the rules and interfaces that assures them secure
 interoperability beyond vendor-specific implementations across multiple domains and availability of related standards or reference implementations. This methodology will allow the orchestration of NetApps to conform to a more
 valuable and complete service in operators’ production environments.

@@ -8,14 +8,6 @@ UoP
 
 ### Objectives:
 
-This WP will prepare the distributed Infrastructure and Experimentation environment, facing the experimenter. The
-tasks in this WP will implement the tools and middleware that adapt the NetApps requirements in actions for the
-orchestration services as well as implement uniform standardized APIs for experiment requests. This WP will make
-available an operational NFV MANO stack, supporting the experimentation platform and integrated with the
-experimenter-facing tools and services. Finally, this WP will integrate the distributed 5G/NFV experimentation facilities
-with the developed experimentation services, in order to address the requirements and architecture defined in WP2.
-
-Specifically, WP3 will:
 - Implement and deliver the 5GASP unified 5G/NFV experimentation services and infrastructure as an open source
 reference implementation.
 - Support and Implement the DevOps paradigm for the NetApps experimentation process.
