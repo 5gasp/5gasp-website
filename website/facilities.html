@@ -1,0 +1,56 @@
+---
+layout: base
+title: Facilities
+---
+
+<section class="faq_area area-padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="area-heading" style="margin-top:50px">
+                    <h4>Facilities</h4>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <div class="accordion" id="accordionExample">
+
+                    {% assign counter = 0 %}
+                    {% for facility in site.facilities-preview %}
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapse{{ counter }}" aria-expanded="false"
+                                    aria-controls="collapse{{ counter }}">
+                                    {{ facility.name }} - {{ facility.country }}
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse{{ counter }}" class="collapse" aria-labelledby="heading{{ counter }}"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h6 class="typo-list" style="margin-bottom: 20px; color: #4B465A;">
+                                    {{ facility.complete-name }}
+                                </h6>
+                                {{ facility.content | markdownify }}
+
+                                {% assign full-facility = site.facilities | where: 'name', facility.name | first %}
+                                {% if full-facility %}
+                                <a href="{{ full-facility.url }}">Show more.</a>
+                                {% endif %}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {% assign counter = counter | plus:1 %}
+                    {% endfor %}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

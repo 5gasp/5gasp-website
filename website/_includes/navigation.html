@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand logo_h" href="{{ site.baseurl }}/"><img
+                src="{{ site.baseurl }}/assets/img/5gasp-logo-small.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse offset text-center" id="navbarSupportedContent"
+            style="padding-left: 195px; text-align: center;">
+            <ul class="nav navbar-nav menu_nav">
+                {% for item in site.data.navigation %}
+
+                {% if item.name == "Experiments" %}
+                <!--
+                <li class="nav-item submenu dropdown">
+                    <a href="{{ item.link }}" class="nav-link dropdown-toggle" role="button" aria-haspopup="true"
+                        aria-expanded="false">{{item.name}}</a>
+                    <ul class="dropdown-menu">
+                        {% for experiment in site.experiments %}
+                        <li class="nav-item"> <a class="nav-link"
+                                href="{{ experiment.url }}">{{ experiment.experiment-title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                -->
+                {% elsif item.name == "Facilities" %}
+                <li class="nav-item submenu dropdown">
+                    <a href="{{ item.link }}" class="nav-link dropdown-toggle" role="button" aria-haspopup="true"
+                        aria-expanded="false">{{item.name}}</a>
+                    <ul class="dropdown-menu">
+                        {% for facility in site.facilities %}
+                        <li class="nav-item"> <a class="nav-link" href="{{ facility.url }}">{{ facility.name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% else %}
+                <li class="nav-item"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+</nav>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="{{ site.baseurl }}/assets/img/5gasp-logo-small.png" type="image/png">
+        <title>{{ page.title }}</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/themify-icons.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendors/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/responsive.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/5gasp.css">
+    </head>
+
+    <body>
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+                {% include navigation.html %}
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+
+
+        {% if page.title == "Home" %}
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area" style="margin-bottom: 25px;">
+            <div class="banner_inner d-flex align-items-center">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                            <div class="banner_content">
+                                <h3>H2020-5GASP</h3>
+                                <p>5G Application & Services experimentation and certification Platform</p>
+                                <button class="btn click-btn" type="submit" style="cursor: auto;">
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        {% else %}
+        <!--================Hero Banner Area Start =================-->
+        <section class="hero-banner d-flex align-items-center" style="background-color: #261e74; margin-bottom: 25px;">
+            <div class="container text-center">
+                <h2>{{ page.title }}</h2>
+                <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">{{ page.subtitle }}</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!--================Hero Banner Area End =================-->
+        {% endif %}
+
+
+
+
+
+        {{ content }}
+
+        <!-- ================ start footer Area ================= -->
+        <footer class="footer-area" style="margin-top: 50px;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                        <h4>5GASP</h4>
+                        <p>
+                            This project has received funding from the European Union’s Horizon 2020 research and
+                            innovation programme (5GASP H2020 – ICT- 2020).
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                        <h4>Contact Info</h4>
+                        <div class="footer-address">
+                            <span>Email : 5gasp-contact@5g-ppp.eu</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+                        <h4>Social Media</h4>
+                        <ul>
+                            <li><a href="">@5gasp</a></li>
+                        </ul>
+                    </div>
+                    <!--
+                    <div class="col-lg-3 col-md-8 mb-4 mb-xl-0 single-footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days
+                            open</p>
+
+                        <div class="form-wrap" id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get">
+                                <div class="input-group">
+                                    <input type="email" class="form-control" name="EMAIL"
+                                        placeholder="Your Email Address" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Your Email Address '">
+                                    <div class="input-group-append">
+                                        <button class="btn click-btn" type="submit">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                    -->
+                </div>
+
+                <div class="footer-bottom row align-items-center text-center text-lg-left no-gutters">
+                    <p class="footer-text m-0 col-lg-8 col-md-12">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | 5GASP Project
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                    <!--
+                    <div class="col-lg-4 col-md-12 text-center text-lg-right footer-social">
+                        <a href="#"><i class="ti-facebook"></i></a>
+                        <a href="#"><i class="ti-twitter-alt"></i></a>
+                        <a href="#"><i class="ti-dribbble"></i></a>
+                        <a href="#"><i class="ti-linkedin"></i></a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </footer>
+        <!-- ================ End footer Area ================= -->
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{{ site.baseurl }}/assets/js/jquery-2.2.4.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/popper.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/jquery.ajaxchimp.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/waypoints.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/mail-script.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/contact.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/jquery.form.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/jquery.validate.min.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/mail-script.js"></script>
+        <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
+    </body>
+
+</html>
+
+</html>
