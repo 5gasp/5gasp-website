@@ -13,6 +13,8 @@ collections:
     output: true
   project-objectives:
     output: true
+  project-workpackages:
+    output: true
   
 
 defaults:

@@ -1,0 +1,80 @@
+---
+layout: base
+title: 5GASP Project
+subtitle: Work Packages
+---
+
+<section class="faq_area area-padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
+                    <h1>Work Packages</h1>
+                </div>
+
+            </div>
+
+            <div class="project-info col-lg-9  mb-lg-0">
+
+                {% assign counter = 0 %}
+                {% for workpackage in site.project-workpackages %}
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapse{{ counter }}" aria-expanded="false"
+                                    aria-controls="collapse{{ counter }}">
+                                    {{ workpackage.title }}: {{ workpackage.description }}
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse{{ counter }}" class="collapse" aria-labelledby="heading{{ counter }}"
+                            data-parent="#accordionExample">
+                            <div class="card-body project-objectives">
+                                {{ workpackage.content | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% assign counter = counter | plus:1 %}
+                {% endfor %}
+            </div>
+
+            <div class="col-lg-3">
+                <div class="project-navbar blog_right_sidebar">
+                    <aside class="single_sidebar_widget post_category_widget">
+                        <ul class="list cat-list">
+                            <li>
+                                <a href="{{ site.baseurl }}/project/project.html" class=" d-flex">
+                                    <h1 class="selected">5GASP Project</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ site.baseurl }}/project/objectives.html" class=" d-flex">
+                                    <h1>Objectives</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Work Packages</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Consortium as a whole</h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <h1>Consortium participants</h1>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
