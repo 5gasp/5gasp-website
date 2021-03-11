@@ -1,32 +1,30 @@
 ---
 title: ITAv
 subtitle: Telecommunications Institute of Aveiro
-name: ITAv
-complete-name: Telecommunications Institute of Aveiro
 country: Portugal
-
 ---
 
-![]({{ site.url }}/assets/img/facilities/itav/it_logo.png)
+
+![](it_logo.png)
 
 
-# ITAv
+# ITAv:
 ITAv is a Research Institution that mediates knowledge transfer from academia to industry. The team participating in 5GASP will fully embrace this mission by not only developing research, but also supporting European Industries (either startups or incumbent operators) in adopting the technologies associated with NetApps. ITAv envisages securing an optimal knowledge transfer to all relevant parties through educational content, opensource contributions and standardization contributions. The focus for participation in events will target high-profile events and scientific conferences sponsored by international technical societies (e.g., IEEE, IFIP, IFAC, ACM). For publications of the most valuable project developments and results, high-impact scientific journals will be pursued.  
 
-![]({{ site.url }}/assets/img/facilities/itav/it_building_white.png)
+![](it_building_white.png)
 
 
-# Location
+# Location:
 
 ITAv is located in the city of Aveiro, in Portugal. It is composed by two different sites on the University of Aveiro Campus.
 
-![]({{ site.url }}/assets/img/facilities/itav/it_location.png)
+![](it_location.png)
 
 
-# Available Infrastructure
+# Available Infrastructure:  
 ITAv infrastructure provides a real-life environment for developing, integrating and testing novel solutions for 5G and beyond technologies. Bringing together academics, operators, vendors and vertical industries to accelerate the development of mobile communications and the creation of novel business models. The infrastructure is open to the whole research and innovation community, both academic and industrial, to foster innovation on 5G technologies and its exploitation. The infrastructure features four different sites: (i) two on-campus indoor deployments; (ii) one off-campus outdoor deployment; and (iii) one off-campus indoor, edge-based deployment.  
 
-![]({{ site.url }}/assets/img/facilities/itav/it_infra.png)
+![](it_infra.png)
 
 The core infrastructure deployed on the main on-campus features both research graded and industry graded solutions:  
 
@@ -44,8 +42,8 @@ The core infrastructure deployed on the main on-campus features both research gr
 	-   24 Multi-Tech Nodes  
 	-   Mobile Node(~30km/h)  
 	
-![]({{ site.url }}/assets/img/facilities/itav/it_reasearch_graded_1.png)
-![]({{ site.url }}/assets/img/facilities/itav/it_reasearch_graded_2.png)
+![](it_reasearch_graded_1.png)
+![](t_reasearch_graded_2.png)
 
 ## Industry graded  
 -   Commercial Graded 5G Standalone Core  
@@ -60,15 +58,14 @@ Remaining sites are empowered with commercial graded solution:
 - Outdoor scenarios:  
 -   5G Outdoor Radio (3 x 64T64R antennas)  
 
-![]({{ site.url }}/assets/img/facilities/itav/it_industry_graded.png)
+![](it_industry_graded.png)
 
 # **5G Communication Network**  
 
-<br/>
-![]({{ site.url }}/assets/img/facilities/itav/it_5g_network.png)
+![](it_5g_network.png)
 
 
-# **Testbed Description**  
+# **Testbed Description:**  
 Private/Public: Private  
 Software Stack:  
 -   NFVO: OSM 8  
