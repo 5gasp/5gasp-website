@@ -1,0 +1,38 @@
+---
+layout: base
+title: Dissemination
+subtitle: Leaflets
+---
+
+<section class="faq_area area-padding-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-12" style="visibility: hidden;">
+                <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
+                    <h1>Press Releases</h1>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-12">
+                <div class="accordion" id="accordionExample">
+
+
+                    {% for leaflet in site.leaflets %}
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h6 class="mb-0">
+                                <a target="_blank" href="{{ leaflet.resource }}">
+                                    <button class="btn btn-link collapsed" type="button">
+                                        {{ leaflet.title }}
+                                    </button>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>

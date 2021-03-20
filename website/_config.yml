@@ -19,6 +19,10 @@ collections:
     output: true
   press-releases:
     output: true
+  leaflets:
+    output: true
+  news:
+    output: true
   
 
 defaults:
@@ -47,6 +51,11 @@ defaults:
       type: "press-releases"
     values:
       layout: "press-release"
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
   - scope:
       path: ""
       type: "facilities"
