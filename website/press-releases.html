@@ -15,7 +15,10 @@ subtitle: Press Releases
 
             {% for press-release in site.press-releases %}
             <div class="col-md-6 col-lg-4" style="margin-bottom: 25px;">
-                <img class="img-fluid single-service-5gasp-img" src="{{ press-release.image }}" alt="Card image cap">
+                <a href="{{ press-release.url }}">
+                    <img class="img-fluid single-service-5gasp-img" src="{{ press-release.image }}"
+                        alt="{{ press-release.release-title }}">
+                </a>
                 <div class=" single-service-5gasp">
                     <a class="single-service-5gasp-title" href="{{ press-release.url }}">
                         <h1>{{ press-release.release-title }}</h1>
