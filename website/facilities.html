@@ -6,10 +6,9 @@ title: Facilities
 <section class="faq_area area-padding-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12">
-                <div class="area-heading" style="margin-top:50px">
-                    <h4>Facilities</h4>
-
+            <div class="col-12 col-lg-12" style="visibility: hidden;">
+                <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
+                    <h1>Press Releases</h1>
                 </div>
             </div>
             <div class="col-sm-12 col-lg-12">
@@ -30,8 +29,8 @@ title: Facilities
                         </div>
                         <div id="collapse{{ counter }}" class="collapse" aria-labelledby="heading{{ counter }}"
                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                <h6 class="typo-list" style="margin-bottom: 20px; color: #4B465A;">
+                            <div class="card-body facility-preview">
+                                <h6 class="typo-list">
                                     {{ facility.complete-name }}
                                 </h6>
                                 {{ facility.content | markdownify }}
