@@ -1,0 +1,7 @@
+---
+name: ORO
+complete-name: Orange Romania 5G Lab
+country: Romania
+---
+Orange Romania is the mobile telecommunications market leader in Romania with over 10.7 million customers in 2021 and over 2700 employees. ORO is part of the Orange Group, one of the largest multi-national corporations in the world with a strong leadership in innovation and over 272 million customers over 5 continents. ORO has invested well above 2.5 billion EUR since 1997 and is constantly investing in the network development, new technologies, products and services. ORO launched Orange 5G in Bucharest, Cluj-Napoca and Iasi with plans to expand the coverage in other cities. ORO is first within the Orange footprint to launch 5G. The ORO 5G network offers maximum download speeds of up to 1.2 Gbps and average speeds of 600 Mbps. 
+The **Orange 5G Lab** is an advanced 5G experimentation facility, in Bucharest, created in collaboration with the CAMPUS Research Center of UPB - Universitatea POLITEHNICA of Bucharest. The 5G Lab will focus on prototyping, testing and validating new 5G use-cases, new applications and equipment and will play a crucial role in the 5G-PPP / ICT projects where ORO is a partner. A team of highly skilled experts and academics will enable delivery as per the projects DoW. 5G-ASP is one of the first H2020 Projects to be fully supported by the 5G Lab Team.

@@ -27,7 +27,7 @@ The academic partners will assure the production of high-quality educational mat
 | ![]({{ site.url }}/assets/img/logo/vmware_logo_50.png) | VMWARE | [VMware Bulgaria](https://www.vmware.com/) 	| BG |
 | ![]({{ site.url }}/assets/img/logo/orange_logo_50.jpg) | ORO | [Orange Romania](https://www.orange.ro/) | RO | 
 | ![]({{ site.url }}/assets/img/logo/eantc_logo_40.png) | EANTC | [European Advanced Networking Test Center](https://eantc.de/) | DE|
-| ![]({{ site.url }}/assets/img/logo/odin_logo_50.png) | OsinS | [Odin Solutions](http://www.odins.es/) | ES |
+| ![]({{ site.url }}/assets/img/logo/odin_logo_50.png) | OdinS | [Odin Solutions](http://www.odins.es/) | ES |
 | ![]({{ site.url }}/assets/img/logo/in_logo_50.png) | ININ | [Internet Institute Ltd.](http://www.iinstitute.eu/) | SI |
 | ![]({{ site.url }}/assets/img/logo/modio_logo_50.png) | Modio | [Modio Computing Single Member Private Company](http://www.modio.io/)	| EL |
 | ![]({{ site.url }}/assets/img/logo/yogoko_logo_50.png) | YoGoKo | [YoGoko](https://www.yogoko.com/en/main.html) | FR |
