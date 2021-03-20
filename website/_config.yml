@@ -17,6 +17,8 @@ collections:
     output: true
   project-participants:
     output: true
+  press-releases:
+    output: true
   
 
 defaults:
@@ -40,6 +42,11 @@ defaults:
       type: "project"
     values:
       layout: "base"
+  - scope:
+      path: ""
+      type: "press-releases"
+    values:
+      layout: "press-release"
   - scope:
       path: ""
       type: "facilities"

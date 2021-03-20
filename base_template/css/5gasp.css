@@ -208,3 +208,31 @@
 .project-info ul li{
     margin-bottom: 10px;
 }
+
+
+.single-service-5gasp{
+    border: 1px solid #edf1f6;
+    background: #fff;
+    text-align: left;
+    padding: 20px 20px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    height: calc(100% - 240px);
+}
+
+
+.single-service-5gasp-title {
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.single-service-5gasp-img {
+    height: 225px; 
+    width:100%;
+}

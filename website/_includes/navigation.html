@@ -59,6 +59,17 @@
                         </li>
                     </ul>
                 </li>
+                {% elsif item.name == "Dissemination" %}
+                <li class="nav-item submenu dropdown">
+                    <a href="#" onclick="return false;" class="nav-link dropdown-toggle" disabledrole="button"
+                        aria-haspopup="true" aria-expanded="false">{{item.name}}</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}/press-releases.html">Press Releases</a>
+                        </li>
+                    </ul>
+                </li>
+
                 {% else %}
                 <li class="nav-item"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
                 {% endif %}
