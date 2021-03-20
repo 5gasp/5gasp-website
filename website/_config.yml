@@ -3,12 +3,6 @@ collections:
     output: true
   facilities-preview:
     output: true
-  authors:
-    output: true
-  experiments-preview:
-    output: true
-  experiments:
-    output: true
   project-main:
     output: true
   project-objectives:
@@ -26,21 +20,6 @@ collections:
   
 
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "experiments"
-    values:
-      layout: "experiment"
   - scope:
       path: ""
       type: "project"

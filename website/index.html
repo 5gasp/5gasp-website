@@ -4,7 +4,27 @@ title: Home
 ---
 
 <div class="col-lg-10 offset-lg-1 home" style="text-align: justify;">
-    <h1 style="margin-bottom: 20px; color: #201978;">5GASP Project</h1>
+    <h1>Latest News</h1>
+    <div class="row">
+
+
+        {% for news in site.news  limit:3%}
+        <div class="col-md-6 col-lg-4" style="padding: 30px;">
+            <a href="{{ news.url }}">
+                <img class="img-fluid single-service-5gasp-img" src="{{ news.image }}"
+                    alt="{{ press-release.release-title }}">
+            </a>
+            <div class=" single-service-5gasp">
+                <a class="single-service-5gasp-title" href="{{ news.url }}">
+                    <h1>{{ news.release-title }}</h1>
+                </a>
+                <p>{{ news.release-date }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <h1>5GASP Project</h1>
 
     <p>
         As 5G approaches a very high maturity level, testing and validation of 5G solutions has become of utmost

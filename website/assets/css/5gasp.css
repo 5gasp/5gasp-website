@@ -344,11 +344,17 @@
     width:100%;
 }
 
+.single-service-5gasp-img-index {
+    height: 112px; 
+    width:100%;
+}
+
+
+
 
 .single-service-5gasp h1 {
     font-size: 17px;
     margin-top: 2px;
-    
     font-weight: 600;
     color: #201978;
 }
