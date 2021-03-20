@@ -77,6 +77,26 @@
                     </ul>
                 </li>
 
+                {% elsif item.name == "Publications" %}
+                <li class="nav-item submenu dropdown">
+                    <a href="#" onclick="return false;" class="nav-link dropdown-toggle" disabledrole="button"
+                        aria-haspopup="true" aria-expanded="false">{{item.name}}</a>
+                    <ul class="dropdown-menu" style="width: 250px !important;">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="{{ site.baseurl }}/publications/deliverables.html">Deliverables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}/publications/conferences.html">Conferences
+                                and Papers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.baseurl }}/publications/workshops.html">Workshops and
+                                Talks</a>
+                        </li>
+                    </ul>
+                </li>
+
                 {% else %}
                 <li class="nav-item"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
                 {% endif %}
