@@ -13,8 +13,8 @@ jobs:
       id: deployRequest
       uses: fjogeleit/http-request-action@master
       with:
-        url: 'https://5gasp.eu/update/'
+        url: 'https://5gasp.eu/update/' 
         method: 'POST'
-        data: {"key" : ${{ secrets.UPDATE_KEY }}}
+        data: '{"key" : "${{ secrets.UPDATE_KEY }}"}'
     - name: Show Response
       run: echo ${{ steps.deployRequest.outputs.response }}
