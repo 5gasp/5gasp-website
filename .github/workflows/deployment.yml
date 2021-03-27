@@ -3,7 +3,7 @@ name: Deploy the 5GASP Website
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deployment:
