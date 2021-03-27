@@ -2,7 +2,7 @@
 title: ININ
 subtitle: Internet Institute Ltd.
 name: ININ
-complete-name: internet Institute Ltd.
+complete-name: Internet Institute Ltd.
 country: Slovenia
 ---
 
