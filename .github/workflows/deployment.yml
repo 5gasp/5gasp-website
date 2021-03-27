@@ -1,0 +1,20 @@
+name: Deploy the 5GASP Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Request Deployment
+      id: deployRequest
+      uses: fjogeleit/http-request-action@master
+      with:
+        url: 'https://5gasp.eu/update/'
+        method: 'POST'
+        data: {"key" : ${{ secrets.UPDATE_KEY }}}
+    - name: Show Response
+      run: echo ${{ steps.deployRequest.outputs.response }}
