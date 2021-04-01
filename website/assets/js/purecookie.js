@@ -1,6 +1,6 @@
 // --- Config --- //
 var purecookieTitle = "Cookies."; // Title
-var purecookieDesc = "By using this website, you automatically accept that usage of cookies."; // Description
+var purecookieDesc = "By using this website, you automatically accept the usage of cookies."; // Description
 var purecookieLink = ''; // Cookiepolicy link
 var purecookieButton = "Understood"; // Button text
 // ---        --- //
