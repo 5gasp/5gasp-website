@@ -17,6 +17,8 @@ collections:
     output: true
   news:
     output: true
+  deliverables:
+    output: true
   
 
 defaults:
