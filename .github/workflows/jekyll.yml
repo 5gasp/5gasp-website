@@ -16,3 +16,9 @@ jobs:
         build_only: true
         jekyll_src: 'website'
         target_branch: 'master'
+
+    - uses: papeloto/action-zip@v1
+        with:
+          files: website/build
+          recursive: true
+          dest: website.zip
