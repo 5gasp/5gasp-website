@@ -1,0 +1,17 @@
+name: Jekyll Deployment
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  jekyll:
+    runs-on: ubuntu-16.04
+    steps:
+    - uses: actions/checkout@v2
+
+    # Specify the Jekyll source location as a parameter
+    - uses: helaili/jekyll-action@v2
+      with:
+        build_only: true
+        jekyll_src: 'weebsite/_site'
