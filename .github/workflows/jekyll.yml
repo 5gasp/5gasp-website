@@ -12,21 +12,20 @@ jobs:
 
     # Specify the Jekyll source location as a parameter
     - uses: helaili/jekyll-action@v2
-    - name: compile jekyll
       with:
         build_only: true
         jekyll_src: 'website'
         target_branch: 'master'
 
     - uses: papeloto/action-zip@v1
-    - name: zip
       with:
         files: website/build
         recursive: true
         dest: website.zip
         
-    - uses: actions/checkout@master
-    - name: curl
-      uses: wei/curl@v1
+    - uses: wei/curl@v1
       with:
         args:  -X POST -F 'key="${{ secrets.UPDATE_KEY }}"' -F 'website_zip=@./website.zip' https://5gasp.eu/update
+        
+    - uses: actions/checkout@master
+   
