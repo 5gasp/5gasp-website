@@ -29,7 +29,7 @@ The academic partners will assure the production of high-quality educational mat
 | ![]({{ site.url }}/assets/img/logo/eantc_logo_40.png) | EANTC | [European Advanced Networking Test Center](https://eantc.de/) | DE|
 | ![]({{ site.url }}/assets/img/logo/odin_logo_50.png) | OdinS | [Odin Solutions](http://www.odins.es/) | ES |
 | ![]({{ site.url }}/assets/img/logo/in_logo_50.png) | ININ | [Internet Institute Ltd.](http://www.iinstitute.eu/) | SI |
-| ![]({{ site.url }}/assets/img/logo/lambda_networks.png) | LN | Lamda Networks Monoprosopi IKE	| EL |
+| ![]({{ site.url }}/assets/img/logo/lambda_networks.png) | LN | [ Lamda Networks Monoprosopi IKE](https://www.lamdanetworks.com/)	| GR |
 | ![]({{ site.url }}/assets/img/logo/yogoko_logo_50.png) | YoGoKo | [YoGoko](https://www.yogoko.com/en/main.html) | FR |
 | ![]({{ site.url }}/assets/img/logo/bundleslab_logo_50.png) | BLB | [Bundleslab Korlatolt Felelossegu Tarsasag](http://www.bundleslab.com/) | HU |	
 | ![]({{ site.url }}/assets/img/logo/driveu_logo_50.png) | DriveU |  [Driveu Tech Ltd.](https://driveu.auto/) | IT |
