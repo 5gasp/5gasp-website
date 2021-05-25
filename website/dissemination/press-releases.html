@@ -7,32 +7,33 @@ subtitle: Press Releases
 <section class="faq_area area-padding-bottom">
     <div class="container">
         <div class="row">
-
-
-            <p style="margin-top: 75px;">Currently, there are no press releases...</p>
-
-            <!--
             <div class="col-12 col-lg-12" style="visibility: hidden;">
                 <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
                     <h1>Press Releases</h1>
                 </div>
             </div>
-            
-            {% for press-release in site.press-releases %}
-            <div class="col-md-6 col-lg-4" style="margin-bottom: 25px;">
-                <a href="{{ press-release.url }}">
-                    <img class="img-fluid single-service-5gasp-img" src="{{ press-release.image }}"
-                        alt="{{ press-release.release-title }}">
-                </a>
-                <div class=" single-service-5gasp">
-                    <a class="single-service-5gasp-title" href="{{ press-release.url }}">
-                        <h1>{{ press-release.release-title }}</h1>
-                    </a>
-                    <p>{{ press-release.release-date }}</p>
+            <div class="col-sm-12 col-lg-12">
+                <div class="accordion" id="accordionExample">
+
+
+                    {% for press-release in site.press-releases %}
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h6 class="mb-0">
+                                <a target="_blank" href="{{ press-release.resource }}">
+                                    <button class="btn btn-link collapsed" type="button">
+                                        {{ press-release.title }}
+                                    </button>
+                                </a>
+                            </h6>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
-            {% endfor %}
-            -->
+
+
 
         </div>
+    </div>
 </section>
