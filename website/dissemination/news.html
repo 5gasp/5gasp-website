@@ -13,7 +13,7 @@ subtitle: News
                 </div>
             </div>
 
-            {% for news in site.news %}
+            {% for news in site.news reversed %}
             <div class="col-md-6 col-lg-4" style="margin-bottom: 25px;">
                 <a href="{{ news.url }}">
                     <img class="img-fluid single-service-5gasp-img" src="{{ news.image }}"
