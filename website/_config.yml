@@ -19,6 +19,8 @@ collections:
     output: true
   deliverables:
     output: true
+  conferences:
+    output: true
   
 
 defaults:

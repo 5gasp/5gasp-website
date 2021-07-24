@@ -8,9 +8,36 @@ subtitle: Conferences and Papers
     <div class="container">
         <div class="row">
 
-            <p style="margin-top: 75px;">Currently, there are neither conferences nor papers...</p>
+            <div class="project-info col-lg-12  mb-lg-0">
+                <table>
+                <thead>
+                    <tr>
+                    <th>Paper Type (Journal, Conference)</th>
+                    <th>Title</th>
+                    <th>Authors</th>
+                    <th>Title of the Journal/Proc./Book</th>
+                    <th>DOI</th>
+                    <th>Paper Link</th>
+                    <th class="col-lg-4">Relevance to the Project</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for pub in site.conferences %}
+                    <tr>
+                    <td>{{ pub.paper_type }}</td>
+                    <td>{{ pub.title }}</td>
+                    <td>{{ pub.authors }}</td>
+                    <td>{{ pub.journal_title }}</td>
+                    <td>{{ pub.doi }}</td>
+                    <td><a href="{{ pub.repository_link}}" target="_blank">Link</a></td>
+                    <td style="font-size: 12px !important; ">{{ pub.relevance }}</tr>
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
 
             <!--
+                <p style="margin-top: 75px;">Currently, there are neither conferences nor papers...</p>
             <div class="col-12 col-lg-12" style="visibility: hidden;">
                 <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
                     <h1>Press Releases</h1>
