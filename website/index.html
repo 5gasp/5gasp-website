@@ -10,55 +10,70 @@ title: Home
             <div class="row">
 
                 {% if site.news.size == 1 %}
-                {% for news in site.news reversed limit:3 %}
-                <div class="col-md-6 col-lg-4 col-10 offset-1  offset-lg-4  offset-md-3"
-                    style="padding-top: 20px; padding-right: 8px; padding-left: 8px;">
-                    <a href="{{ news.url }}">
-                        <img class="img-fluid single-service-5gasp-img-index" src="{{ news.image }}"
-                            alt="{{ press-release.release-title }}">
-                    </a>
-                    <div class=" single-service-5gasp" style="height:calc(100% - 185px)">
-                        <a class="single-service-5gasp-title" href="{{ news.url }}">
-                            <h1>{{ news.release-title }}</h1>
-                        </a>
-                        <p>{{ news.release-date }}</p>
-                    </div>
-                </div>
-                {% endfor %}
+                    {% assign all_news = site.news | reverse %}
+                    {% assign counter = 0 %}
+                    {% for news in all_news %}
+                        {% if counter < 3 %}
+                        <div class="col-md-6 col-lg-4 col-10 offset-1  offset-lg-4  offset-md-3"
+                            style="padding-top: 20px; padding-right: 8px; padding-left: 8px;">
+                            <a href="{{ news.url }}">
+                                <img class="img-fluid single-service-5gasp-img-index" src="{{ news.image }}"
+                                    alt="{{ press-release.release-title }}">
+                            </a>
+                            <div class=" single-service-5gasp" style="height:calc(100% - 185px)">
+                                <a class="single-service-5gasp-title" href="{{ news.url }}">
+                                    <h1>{{ news.release-title }}</h1>
+                                </a>
+                                <p>{{ news.release-date }}</p>
+                            </div>
+                        </div>
+                        {% assign counter = counter | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
 
                 {% elsif site.news.size == 2 %}
-                {% for news in site.news  reversed limit:3%}
-                <div class="col-md-6 col-lg-4 col-10 offset-2  offset-lg-1  offset-md-0"
-                    style="padding-top: 20px; padding-right: 8px; padding-left: 8px;">
-                    <a href="{{ news.url }}">
-                        <img class="img-fluid single-service-5gasp-img-index" src="{{ news.image }}"
-                            alt="{{ press-release.release-title }}">
-                    </a>
-                    <div class=" single-service-5gasp" style="height:calc(100% - 185px)">
-                        <a class="single-service-5gasp-title" href="{{ news.url }}">
-                            <h1>{{ news.release-title }}</h1>
-                        </a>
-                        <p>{{ news.release-date }}</p>
-                    </div>
-                </div>
-                {% endfor %}
+                    {% assign all_news = site.news | reverse %}
+                    {% assign counter = 0 %}
+                    {% for news in all_news %}
+                        {% if counter < 3 %}
+                        <div class="col-md-6 col-lg-4 col-10 offset-2  offset-lg-1  offset-md-0"
+                            style="padding-top: 20px; padding-right: 8px; padding-left: 8px;">
+                            <a href="{{ news.url }}">
+                                <img class="img-fluid single-service-5gasp-img-index" src="{{ news.image }}"
+                                    alt="{{ press-release.release-title }}">
+                            </a>
+                            <div class=" single-service-5gasp" style="height:calc(100% - 185px)">
+                                <a class="single-service-5gasp-title" href="{{ news.url }}">
+                                    <h1>{{ news.release-title }}</h1>
+                                </a>
+                                <p>{{ news.release-date }}</p>
+                            </div>
+                        </div>
+                        {% assign counter = counter | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
 
                 {% else %}
-                {% for news in site.news reversed limit:3%}
-                <div class="col-md-6 col-lg-4 col-10 offset-1  offset-lg-0  offset-md-0"
-                    style="padding-top: 20px; padding-right: 8px; padding-left: 8px;">
-                    <a href="{{ news.url }}">
-                        <img class="img-fluid single-service-5gasp-img-index" src="{{ news.image }}"
-                            alt="{{ press-release.release-title }}">
-                    </a>
-                    <div class=" single-service-5gasp" style="height:calc(100% - 185px)">
-                        <a class="single-service-5gasp-title" href="{{ news.url }}">
-                            <h1>{{ news.release-title }}</h1>
-                        </a>
-                        <p>{{ news.release-date }}</p>
-                    </div>
-                </div>
-                {% endfor %}
+                    {% assign all_news = site.news | reverse %}
+                    {% assign counter = 0 %}
+                    {% for news in all_news %}
+                        {% if counter < 3 %}
+                        <div class="col-md-6 col-lg-4 col-10 offset-1  offset-lg-0  offset-md-0"
+                            style="padding-top: 20px; padding-right: 8px; padding-left: 8px;">
+                            <a href="{{ news.url }}">
+                                <img class="img-fluid single-service-5gasp-img-index" src="{{ news.image }}"
+                                    alt="{{ press-release.release-title }}">
+                            </a>
+                            <div class=" single-service-5gasp" style="height:calc(100% - 185px)">
+                                <a class="single-service-5gasp-title" href="{{ news.url }}">
+                                    <h1>{{ news.release-title }}</h1>
+                                </a>
+                                <p>{{ news.release-date }}</p>
+                            </div>
+                        </div>
+                        {% assign counter = counter | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
                 {% endif %}
 
             </div>
