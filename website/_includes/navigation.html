@@ -29,6 +29,11 @@
                     </ul>
                 </li>
                 -->
+                {% elsif item.name == "Community Portal" %}
+                <li class="nav-item submenu dropdown">
+                    <a href="{{ item.link }}" target="_blank" class="nav-link" role="button" aria-haspopup="true"
+                        aria-expanded="false">{{item.name}}</a>
+                </li>
                 {% elsif item.name == "Facilities" %}
                 <li class="nav-item submenu dropdown">
                     <a href="{{ item.link }}" class="nav-link dropdown-toggle" role="button" aria-haspopup="true"
