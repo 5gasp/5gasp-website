@@ -8,31 +8,28 @@ subtitle: Workshops and Talks
     <div class="container">
         <div class="row">
 
-
-            <p style="margin-top: 75px;">Currently, there are neither workshops nor talks...</p>
-
-            <!--
+          
             <div class="col-12 col-lg-12" style="visibility: hidden;">
                 <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
-                    <h1>Press Releases</h1>
+                    <h1>Workshops</h1>
                 </div>
             </div>
             
-            {% for press-release in site.press-releases %}
+            {% for workshop in site.workshops %}
             <div class="col-md-6 col-lg-4" style="margin-bottom: 25px;">
-                <a href="{{ press-release.url }}">
-                    <img class="img-fluid single-service-5gasp-img" src="{{ press-release.image }}"
-                        alt="{{ press-release.release-title }}">
+                <a href="{{ workshop.ws_url }}" target="_blank">
+                    <img class="img-fluid single-service-5gasp-img" src="{{ workshop.image }}"
+                        alt="{{ workshop.ws_title }}">
                 </a>
                 <div class=" single-service-5gasp">
-                    <a class="single-service-5gasp-title" href="{{ press-release.url }}">
-                        <h1>{{ press-release.release-title }}</h1>
+                    <a class="single-service-5gasp-title" href="{{ workshop.ws_url }}" target="_blank">
+                        <h1>{{ workshop.ws_title }}</h1>
                     </a>
-                    <p>{{ press-release.release-date }}</p>
+                    <p>{{ workshop.ws_date }}</p>
                 </div>
             </div>
             {% endfor %}
-            -->
+            
 
         </div>
 </section>
