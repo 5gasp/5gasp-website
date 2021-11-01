@@ -493,7 +493,7 @@ ul {
 }
 
 .blog_banner .banner_inner .overlay {
-    background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
+    background: url(../img/banner/banner.jpg) no-repeat scroll center center;
     opacity: .5;
     height: 125%;
     position: absolute;
@@ -3882,7 +3882,7 @@ h6 {
     padding: 25px 60px 25px 30px;
     border-radius: 5px;
     box-shadow: -2px 5.7px 20px 0 rgba(9, 30, 107, 0.05);
-    background-image: url(../img/icon/cotation.png);
+    /* background-image: url(../img/icon/cotation.png); */
     background-size: auto;
     background-position: 100% -128%;
     background-repeat: no-repeat;
