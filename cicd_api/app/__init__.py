@@ -4,7 +4,7 @@ from datetime import datetime
 
 class Root(object):
     # key
-    key= 'pE9VbS@JWGyK:,K:'
+    key= 'xxx'
     git_repo_path = 'xxx'
     # jekyll
     site_output_base_path = '/Users/rd/Desktop/UA/UA_9_Semestre/5GASP/Website/cicd_api'
@@ -23,7 +23,8 @@ class Root(object):
             (f"rm -rf {os.path.join(nginx_source_dir, site_output_dir_name)} && mv {os.path.join(site_output_base_path, site_output_dir_name)} {nginx_source_dir}", "Couldn't move the output website to nginx dir."),
             (f"cd {nginx_source_dir} && rm -rf {backup_dir_name} && mv {served_dir_name} {backup_dir_name}", "Couldn't generate backup of the last version."),
             (f"cd {nginx_source_dir} && mv {site_output_dir_name} {served_dir_name}", "Couldn't update the directory that is being served."),
-            (f"echo $(date) > {os.path.join(nginx_source_dir, served_dir_name, timestamp_file)}", "Couldn't update the timestamp.")
+            (f"echo $(date) > {os.path.join(nginx_source_dir, served_dir_name, timestamp_file)}", "Couldn't update the timestamp."),
+            (f"minify -a -r {nginx_source_dir}{served_dir_name}/assets -o {nginx_source_dir}{served_dir_name}/assets","Could'n minify static assets")
     ]
 
     @cherrypy.expose
