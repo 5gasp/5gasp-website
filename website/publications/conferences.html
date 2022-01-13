@@ -28,11 +28,7 @@ subtitle: Conferences and Papers
                     <td>{{ pub.title }}</td>
                     <td>{{ pub.authors }}</td>
                     <td>{{ pub.journal_title }}</td>
-                    {% if pub.doi %}
-                        <td>{{ pub.doi }}</td>
-                    {% else %}
-                        <td><a href="{{ pub.repository_link}}" target="_blank">Link</a></td>
-                    {% endif %}
+                    <td>{{ pub.doi }}</td>
                     <td><a href="{{ pub.repository_link}}" target="_blank">Link</a></td>
                     <td style="font-size: 12px !important; ">{{ pub.relevance }}</tr>
                     {% endfor %}
