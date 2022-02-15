@@ -16,10 +16,11 @@ jobs:
         build_only: true
         jekyll_src: 'website'
         target_branch: 'master'
-        #target_path: './workspace/website/build'
-    
+        
     - name : ls prev
       run : "ls ../"
+    - name : ls prev2
+      run : "ls ../5gasp-website"
     - name : ls
       run : "ls ."
     - name : ls website
@@ -27,7 +28,7 @@ jobs:
 
     - uses: montudor/action-zip@v1
       with:
-        args: zip -qq -r website.zip website/build
+        args: zip -qq -r website.zip ../5gasp-website
         
     - uses: wei/curl@v1
       with:
