@@ -17,10 +17,10 @@ jobs:
         jekyll_src: 'website'
         target_branch: 'master'
 
-    - uses: montudor/action-zip@v1
+    - uses: montudor/action-zip@v1.0.0
       with:
         args: zip -qq -r website.zip website/build
         
-    - uses: wei/curl@v1
+    - uses: wei/curl@v1.1.1
       with:
         args:  -X POST -F 'key="${{ secrets.UPDATE_KEY }}"' -F 'website_zip=@./website.zip' https://www.5gasp.eu/update
