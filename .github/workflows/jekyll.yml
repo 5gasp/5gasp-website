@@ -17,11 +17,11 @@ jobs:
         jekyll_src: 'website'
         target_branch: 'master'
     - name : machine echo secrets
-      run : "ls ."
+      run : "ls ./website"
       
     - uses: montudor/action-zip@v1
       with:
-        args: zip -qq -r website.zip . -i website/_site
+        args: zip -q -r  website.zip  website/_site
         
     - uses: wei/curl@v1
       with:
