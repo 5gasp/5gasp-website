@@ -16,6 +16,7 @@ jobs:
         build_only: true
         jekyll_src: 'website'
         target_branch: 'master'
+        target_path: './'
     - name : machine echo secrets
       run : "ls ./website"
       
