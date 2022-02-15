@@ -18,7 +18,11 @@ jobs:
         target_branch: 'master'
         target_path: './'
     - name : machine echo secrets
+      run : "ls ."
+    - name : machine echo secrets2
       run : "ls ./website"
+    - name : machine echo secrets3
+      run : "ls ./_site"
       
     - uses: montudor/action-zip@v1
       with:
