@@ -16,17 +16,16 @@ jobs:
         build_only: true
         jekyll_src: 'website'
         target_branch: 'master'
-        target_path: './workspace/'
-    - name : machine echo secrets
+        target_path: './workspace/website/build'
+        
+    - name : ls
       run : "ls ."
-    - name : machine echo secrets2
+    - name : ls website
       run : "ls ./website"
-    - name : machine echo secrets3
-      run : "ls ./_site"
-      
+
     - uses: montudor/action-zip@v1
       with:
-        args: zip -q -r  website.zip  website/_site
+        args: zip -qq -r website.zip website/build
         
     - uses: wei/curl@v1
       with:
