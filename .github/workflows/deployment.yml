@@ -18,3 +18,4 @@ jobs:
         data: '{"key" : "${{ secrets.UPDATE_KEY }}"}'
     - name: Show Response
       run: echo ${{ steps.deployRequest.outputs.response }}
+
