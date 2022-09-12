@@ -7,12 +7,12 @@ subtitle: News
 <section class="faq_area area-padding-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-12" style="visibility: hidden;">
-                <div class="project-info" style="margin-top:50px; margin-bottom: 25px;">
-                    <h1>Press Releases</h1>
-                </div>
+ 
+            <div class="col-12 col-lg-12" style="text-align:center; margin-top: 50px; margin-bottom: 25px; color: #4B465A !important;">
+                <h5>Don't miss out on any news items we post. Subscribe to us on Twitter!</h5>
+                <a href="https://twitter.com/5gasp?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @5gasp</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-
+            
             {% for news in site.news reversed %}
             <div class="col-md-6 col-lg-4" style="margin-bottom: 25px;">
                 <a href="{{ news.url }}">
