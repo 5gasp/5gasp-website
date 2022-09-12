@@ -15,7 +15,7 @@ subtitle: Workshops and Talks
                 </div>
             </div>
             
-            {% for workshop in site.workshops %}
+            {% for workshop in site.workshops reversed %}
             <div class="col-md-6 col-lg-4" style="margin-bottom: 25px;">
                 <a href="{{ workshop.ws_url }}" target="_blank">
                     <img class="img-fluid single-service-5gasp-img" src="{{ workshop.image }}"
