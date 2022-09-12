@@ -276,6 +276,13 @@
     max-width: 80% !;
 }
 
+.project-info-full-image img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 .project-objectives h2 {
     margin-bottom: 20px; 
     font-weight: 600;
