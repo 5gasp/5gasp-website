@@ -8,32 +8,47 @@ subtitle: Conferences and Papers
     <div class="container">
         <div class="row">
 
-            <div class="project-info col-lg-12  mb-lg-0">
-                <table>
-                <thead>
-                    <tr>
-                    <th>Paper Type (Journal, Conference)</th>
-                    <th>Title</th>
-                    <th>Authors</th>
-                    <th>Title of the Journal/Proc./Book</th>
-                    <th>DOI</th>
-                    <th>Paper Link</th>
-                    <th class="col-lg-4">Relevance to the Project</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div class="col-sm-12 col-lg-12" style="margin-top: 25px;">
+                <div class="accordion" id="accordionExample">
+
+                    {% assign counter = 0 %}
                     {% for pub in site.conferences %}
-                    <tr>
-                    <td>{{ pub.paper_type }}</td>
-                    <td>{{ pub.title }}</td>
-                    <td>{{ pub.authors }}</td>
-                    <td>{{ pub.journal_title }}</td>
-                    <td>{{ pub.doi }}</td>
-                    <td><a href="{{ pub.repository_link}}" target="_blank">Link</a></td>
-                    <td style="font-size: 12px !important; ">{{ pub.relevance }}</tr>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapse{{ counter }}" aria-expanded="false"
+                                    aria-controls="collapse{{ counter }}" style="word-wrap: normal; white-space: normal; padding-right: 3em;">
+                                    {{ pub.paper_type }} Paper: {{ pub.title }}
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse{{ counter }}" class="collapse" aria-labelledby="heading{{ counter }}"
+                            data-parent="#accordionExample">
+                            <div class="card-body facility-preview">
+                                <h6 class="typo-list">
+                                    {{ pub.paper_type }} Paper
+                                </h6>
+                                <p> <span style="font-weight: 600;">Title:</span> {{ pub.title }}</p>
+                                <p> <span style="font-weight: 600;">Authors:</span> {{ pub.authors }}</p>
+                                <p> <span style="font-weight: 600;">Title of the Journal/Proc./Book:</span> {{ pub.journal_title }}</p>
+                                <p> <span style="font-weight: 600;">DOI:</span> {{ pub.doi }}</p>
+                                {% if pub.repository_link == "Not Yet Available" %}
+                                <p> <span style="font-weight: 600;">Paper Link:</span> Not Yet Available</p>
+                                {% else %}
+                                <p> <span style="font-weight: 600;">Paper Link:</span> <a href="{{ pub.repository_link}}" target="_blank">Link</a></p>
+                                {% endif %}
+                                
+                                <p> <span style="font-weight: 600;">Relevance to the Project:</span> {{ pub.relevance }}</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    {% assign counter = counter | plus:1 %}
                     {% endfor %}
-                </tbody>
-                </table>
+                </div>
             </div>
 
             <!--
