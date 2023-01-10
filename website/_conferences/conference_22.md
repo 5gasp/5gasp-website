@@ -3,7 +3,7 @@ paper_type: Conference
 title: "GAIA 5G: A Multi-Access Smart-Campus Architecture"
 authors:  "Jorge Gallego-Madrid, Luis Bernal-Escobedo, Rodrigo Asensio, Ana Hermosilla, Alejandro Molina Zarca, Jordi Ortiz, Ramon Sanchez-Iborra"
 journal_title: "2022 GIoTS Global IoT Summit (Dublin, Ireland, 20-23 June, 2022)"
-doi: "Not Yet Available"
+doi: 10.5281/zenodo.7221685
 repository_link: "https://zenodo.org/record/7221685"
 relevance: "Smart-campuses are an emerging ecosystem that permit to enhance the performance and efficiency of academic facilities. Besides, they are also adopted as research, development, and testing platforms for the integration of novel management and governance mechanisms in complex ICT infrastructures. In this line, they are considered as small smart-city-like scenarios which can be used as a playground prior to large-scale deployments. This work presents the GAIA 5G smart-campus, located in the Espinardo campus of the University of Murcia (Spain). In the first place, its technological architecture is presented, detailing the multi-access platform that provides 5G, Internet of Things (IoT), and vehicular communications connectivity. Also, the virtualized computation environment is described. Thanks to these two pillars, GAIA 5G has the potential to host diverse use cases in multiple verticals, such as 5G connectivity, Network Function Virtualization (NFV) management and orchestration, or cybersecurity, which are also described. As discussed along the paper, GAIA 5G is an operative smart-campus infrastructure ready to support state-of-the-art research and accommodate novel 5Gand-beyond (B5G) test cases."
 ---
