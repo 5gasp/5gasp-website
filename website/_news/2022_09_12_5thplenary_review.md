@@ -1,7 +1,7 @@
 ---
 title: "News"
 release-date: "Sept 12, 2022"
-release-title: "5G Plenary and 2nd Interim Review"
+release-title: "5GASP 5th Plenary and 2nd Interim Review"
 release-date: "Sept 12, 2022"
 image: "/assets/img/news/5thplenary.jpeg"
 ---
