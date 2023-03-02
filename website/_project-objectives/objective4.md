@@ -1,6 +1,6 @@
 ---
 title: Objective 4
-description: Automate the process of testing and validation, lowering cost associated with testing and certification of NetApps in telecommunication environment.
+description: Automate the process of testing and validation, lowering cost associated with testing and certification of Network Applications in telecommunication environment.
 ---
 
 

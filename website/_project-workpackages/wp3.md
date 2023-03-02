@@ -10,8 +10,8 @@ UoP
 
 - Implement and deliver the 5GASP unified 5G/NFV experimentation services and infrastructure as an open source
 reference implementation.
-- Support and Implement the DevOps paradigm for the NetApps experimentation process.
-- Implement automated, secure and trusted mechanisms for management and orchestration of NetApps to support
+- Support and Implement the DevOps paradigm for the Network Applications experimentation process.
+- Implement automated, secure and trusted mechanisms for management and orchestration of Network Applications to support
 seamless repeatable experimentation cycles.
 - Deliver a platform that can host and append current or future 5G/NFV testbeds, software/hardware components
 therein that are close to market rollouts.

@@ -8,7 +8,7 @@ VMWARE
 
 ### Objectives:
 
-- Define the requirements for a unified 5G/NFV experimentation infrastructure for enabling 5G NetApps for
+- Define the requirements for a unified 5G/NFV experimentation infrastructure for enabling 5G Network Applications for
 interoperability with well-defined industry standard interfaces, integration with orchestration platforms,
 analytics, virtual infrastructure managers, and cloud native and SDN platforms.
 - Define a process for automated transformation of vertical applications to interoperable 5G/NFV artefacts

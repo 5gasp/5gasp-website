@@ -18,7 +18,7 @@ The **Orange 5G Lab** is an advanced 5G experimentation facility, in Bucharest, 
 
 1. End-to-End Testing and validating 5G scenarios/solutions for different verticals 
 2. Prototype 5G network applications on different market verticals 
-3. Security Assessment for 5G NetApps 
+3. Security Assessment for 5G Network Applications 
 4. Security Implementation for 5G networks
 5. Adapt and Implement different use-cases for 5G applications 
 6. Research and development of 5G/beyond 5G networks/applications/services
