@@ -2,7 +2,7 @@
   @Author: Eduardo Santos
   @Date:   2023-03-26 16:49:46
   @Last Modified by:   Eduardo Santos
-  @Last Modified time: 2023-06-04 18:14:18
+  @Last Modified time: 2023-06-04 18:48:26
 -->
 ---
 layout: base
@@ -27,10 +27,10 @@ subtitle: Conferences and Papers
                                     data-target="#collapse{{ counter }}" aria-expanded="false"
                                     aria-controls="collapse{{ counter }}" style="word-wrap: normal; white-space: normal; padding-right: 3em;">
                                     <!--{{ pub.paper_type }} Paper: {{ pub.title }}-->
-                                    {% if pub.paper_type != 'Book chapter' %}
-                                        Paper: {{ pub.title }}
+                                    {% if pub.paper_type != "Book chapter" %}
+                                        {{ pub.paper_type }} Paper: {{ pub.title }}
                                     {% else %}
-                                        Book chapter: {{ pub.title }}
+                                        {{ pub.paper_type }}: {{ pub.title }}
                                     {% endif %}
                                 </button>
                             </h5>
@@ -40,10 +40,10 @@ subtitle: Conferences and Papers
                             <div class="card-body facility-preview">
                                 <h6 class="typo-list">
                                     <!--{{ pub.paper_type }} Paper-->
-                                    {% if pub.paper_type != 'Book chapter' %}
-                                        Paper: {{ pub.title }}
+                                    {% if pub.paper_type != "Book chapter" %}
+                                        {{ pub.paper_type }} Paper
                                     {% else %}
-                                        Book chapter: {{ pub.title }}
+                                        {{ pub.paper_type }}
                                     {% endif %}
                                 </h6>
                                 <p> <span style="font-weight: 600;">Title:</span> {{ pub.title }}</p>
