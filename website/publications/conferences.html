@@ -20,12 +20,12 @@ subtitle: Conferences and Papers
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapse{{ counter }}" aria-expanded="false"
                                     aria-controls="collapse{{ counter }}" style="word-wrap: normal; white-space: normal; padding-right: 3em;">
-                                    {{ pub.paper_type }} Paper: {{ pub.title }}
-                                    <!--{% if pub.paper_type != 'Book chapter' %}
-                                        Paper: {{ pub.title }}
+                                    <!--{{ pub.paper_type }} Paper: {{ pub.title }}-->
+                                    {% if pub.paper_type != 'Book chapter' %}
+                                        {{ pub.paper_type }} Paper: {{ pub.title }}
                                     {% else %}
-                                        Book chapter: {{ pub.title }}
-                                    {% endif %}-->
+                                        {{ pub.paper_type }}: {{ pub.title }}
+                                    {% endif %}
                                 </button>
                             </h5>
                         </div>
@@ -33,12 +33,12 @@ subtitle: Conferences and Papers
                             data-parent="#accordionExample">
                             <div class="card-body facility-preview">
                                 <h6 class="typo-list">
-                                    {{ pub.paper_type }} Paper
-                                    <!--{% if pub.paper_type != 'Book chapter' %}
-                                        Paper: {{ pub.title }}
+                                    <!--{{ pub.paper_type }} Paper-->
+                                    {% if pub.paper_type != 'Book chapter' %}
+                                        {{ pub.paper_type }} Paper
                                     {% else %}
-                                        Book chapter: {{ pub.title }}
-                                    {% endif %}-->
+                                        {{ pub.paper_type }}
+                                    {% endif %}
                                 </h6>
                                 <p> <span style="font-weight: 600;">Title:</span> {{ pub.title }}</p>
                                 <p> <span style="font-weight: 600;">Authors:</span> {{ pub.authors }}</p>
