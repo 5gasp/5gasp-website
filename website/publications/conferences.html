@@ -11,7 +11,7 @@ subtitle: Conferences and Papers
             <div class="col-sm-12 col-lg-12" style="margin-top: 25px;">
                 <div class="accordion" id="accordionExample">
 
-                    {% assign counter = 0 %}
+                    {% assign counter = 1 %}
                     {% for pub in site.conferences %}
 
                     <div class="card">
@@ -21,10 +21,11 @@ subtitle: Conferences and Papers
                                     data-target="#collapse{{ counter }}" aria-expanded="false"
                                     aria-controls="collapse{{ counter }}" style="word-wrap: normal; white-space: normal; padding-right: 3em;">
                                     <!--{{ pub.paper_type }} Paper: {{ pub.title }}-->
+
                                     {% if pub.paper_type != 'Book chapter' %}
-                                        {{ pub.paper_type }} Paper: {{ pub.title }}
+                                    {{ counter }}. {{ pub.paper_type }} Paper: {{ pub.title }}
                                     {% else %}
-                                        {{ pub.paper_type }}: {{ pub.title }}
+                                    {{ counter }}. {{ pub.paper_type }}: {{ pub.title }}
                                     {% endif %}
                                 </button>
                             </h5>
