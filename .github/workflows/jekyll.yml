@@ -21,6 +21,6 @@ jobs:
       with:
         args: zip -qq -r website.zip website/build
         
-    - uses: wei/curl@v1.1.1
-      with:
-        args:  -X POST -F 'key="${{ secrets.UPDATE_KEY }}"' -F 'website_zip=@./website.zip' https://www.5gasp.eu/update
+    - name: curl to 5GASP website
+      run: |
+        curl -X POST -F 'key="${{ secrets.UPDATE_KEY }}"' -F 'website_zip=@./website.zip' https://www.5gasp.eu/update
