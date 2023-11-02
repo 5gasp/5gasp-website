@@ -2,7 +2,7 @@
 ws_title: "An Automotive Vertical view on smart cities, DevOps, and 5G Network Integration"
 ws_url: "https://www.eventbrite.com/e/748684203607?aff=oddtdtcreator"
 ws_date: "Nov 15, 2023"
-image: "/assets/img/workshops/ws_5_img.jpeg"
+image: "/assets/img/workshops/ws_5_img.jpg"
 ---
 
 We are excited to extend an invitation for you to join our upcoming webinar, organized by the 5GASP Horizon 2020 European project. This webinar aims to explore the critical intersections of the road transportation vertical (automotive use cases and connected & cooperative mobility use cases), DevOps practices, and 5G network integration, with a potential focus on standardization.
