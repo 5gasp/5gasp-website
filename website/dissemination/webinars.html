@@ -30,8 +30,12 @@ subtitle: Webinars
                                 <!--<h6 class="typo-list">{{ webinar.name }}</h6>-->
                                 <p> <span style="font-weight: 600;">Title:</span> {{ webinar.name }}</p>
                                 <p> <span style="font-weight: 600;">Date:</span> {{ webinar.when }}</p>
-                                <p> <span style="font-weight: 600;">Webinar Link:</span> <a href="{{ webinar.link }}" target="_blank">Link</a></p>
+                                <p> <span style="font-weight: 600;">Webinar Link:</span> <a href="{{ webinar.link }}" target="_blank">here</a></p>
+                                {% if webinar.about == nil %}
+                                <p> <span style="font-weight: 600;">About this event:</span> Not Available</p>
+                                {% else %}
                                 <p> <span style="font-weight: 600;">About this event:</span> {{ webinar.about }}</p>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
