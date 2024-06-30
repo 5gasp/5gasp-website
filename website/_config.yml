@@ -25,6 +25,8 @@ collections:
     output: true
   webinars:
     output: true
+  innovations:
+    output: true
   
 
 defaults:

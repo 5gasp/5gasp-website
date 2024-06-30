@@ -12,7 +12,7 @@ From the start, 5GASP aimed to push the boundaries of 5G technology, bringing in
 
 We extend our heartfelt thanks to all partners who have contributed to the success of 5GASP. Your expertise and dedication have been instrumental in reaching this milestone.
 
-Reflecting on the past four years, we are filled with pride and gratitude. The 5GASP project has advanced 5G technology and fostered a community of innovators and leaders.
+Reflecting on the past three years, we are filled with pride and gratitude. The 5GASP project has advanced 5G technology and fostered a community of innovators and leaders.
 
 Looking ahead, we are excited about the future possibilities unlocked by 5GASP. The knowledge and insights gained will shape the future of communication and connectivity.
 

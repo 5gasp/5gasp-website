@@ -113,6 +113,12 @@
                     </ul>
                 </li>
 
+                {% elsif item.name == "Innovations" %}
+                <li class="nav-item">
+                    <a href="{{ item.link }}" class="nav-link" role="button" aria-haspopup="true"
+                        aria-expanded="false">{{item.name}}</a>
+                </li>
+
                 {% else %}
                 <li class="nav-item"><a href="{{ item.link }}" class="nav-link">{{ item.name }}</a></li>
                 {% endif %}
